@@ -11,3 +11,4 @@ Chrome extension to revert reddit ui back to the good 2nd gen interface
 - a file selection menu will appear, select the downloaded redditchromeextension folder
 - toggle the extension on, if it is not already on
 - Enjoy!!!
+##### Only use crx if you are an advanced user, chrome will block the extension from running unless you use the unpacked default installation method
