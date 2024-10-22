@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "new.reddit UI Changer",
+    "version": "1.2",
+    "description": "Redirects to Reddit messages first and then returns to the homepage, keeping the 2nd gen UI.",
+    "permissions": [
+      "tabs",
+      "webNavigation",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.reddit.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "icons": {
+      "512": "icon512.png"
+    },
+    "host_permissions": [
+      "*://*.reddit.com/*"
+    ]
+  }
+  
